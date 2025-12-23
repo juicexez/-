@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnduroMoto - Эндуро мотоциклы</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="logo">
+                    <span class="logo-icon">🏍️</span>
+                    <span class="logo-text">ENDURO<span class="logo-accent">MOTO</span></span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="#catalog">Каталог</a></li>
+                    <li><a href="#features">Преимущества</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+                <a href="#contact" class="btn btn-primary">Заказать</a>
+                <button class="burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Покоряй бездорожье<br>
+                    <span class="highlight">на лучших эндуро</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Широкий выбор эндуро мотоциклов от ведущих мировых производителей.
+                    Гарантия качества и профессиональный сервис.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#catalog" class="btn btn-primary btn-lg">Смотреть каталог</a>
+                    <a href="#contact" class="btn btn-outline btn-lg">Получить консультацию</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Мотоциклов продано</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">15</span>
+                        <span class="stat-label">Лет на рынке</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Довольных клиентов</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section class="catalog" id="catalog">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Каталог мотоциклов</h2>
+                <p class="section-subtitle">Выберите своего железного коня для покорения любых маршрутов</p>
+            </div>
+            <div class="catalog-filters">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="sport">Спортивные</button>
+                <button class="filter-btn" data-filter="touring">Туристические</button>
+                <button class="filter-btn" data-filter="hard">Хард эндуро</button>
+            </div>
+            <div class="catalog-grid">
+                <!-- Card 1 -->
+                <div class="moto-card" data-category="sport">
+                    <div class="moto-card-badge">Хит продаж</div>
+                    <div class="moto-card-image">
+                        <div class="moto-placeholder">
+                            <span>🏍️</span>
+                        </div>
+                    </div>
+                    <div class="moto-card-content">
+                        <h3 class="moto-card-title">KTM 350 EXC-F</h3>
+                        <div class="moto-card-specs">
+                            <span><strong>Двигатель:</strong> 350cc</span>
+                            <span><strong>Мощность:</strong> 55 л.с.</span>
+                            <span><strong>Вес:</strong> 108 кг</span>
+                        </div>
+                        <div class="moto-card-footer">
+                            <span class="moto-card-price">от 950 000 ₽</span>
+                            <a href="#contact" class="btn btn-primary btn-sm">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="moto-card" data-category="hard">
+                    <div class="moto-card-badge new">Новинка</div>
+                    <div class="moto-card-image">
+                        <div class="moto-placeholder">
+                            <span>🏍️</span>
+                        </div>
+                    </div>
+                    <div class="moto-card-content">
+                        <h3 class="moto-card-title">Husqvarna FE 501</h3>
+                        <div class="moto-card-specs">
+                            <span><strong>Двигатель:</strong> 501cc</span>
+                            <span><strong>Мощность:</strong> 63 л.с.</span>
+                            <span><strong>Вес:</strong> 113 кг</span>
+                        </div>
+                        <div class="moto-card-footer">
+                            <span class="moto-card-price">от 1 100 000 ₽</span>
+                            <a href="#contact" class="btn btn-primary btn-sm">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="moto-card" data-category="touring">
+                    <div class="moto-card-image">
+                        <div class="moto-placeholder">
+                            <span>🏍️</span>
+                        </div>
+                    </div>
+                    <div class="moto-card-content">
+                        <h3 class="moto-card-title">Honda CRF450L</h3>
+                        <div class="moto-card-specs">
+                            <span><strong>Двигатель:</strong> 450cc</span>
+                            <span><strong>Мощность:</strong> 50 л.с.</span>
+                            <span><strong>Вес:</strong> 131 кг</span>
+                        </div>
+                        <div class="moto-card-footer">
+                            <span class="moto-card-price">от 850 000 ₽</span>
+                            <a href="#contact" class="btn btn-primary btn-sm">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="moto-card" data-category="sport">
+                    <div class="moto-card-image">
+                        <div class="moto-placeholder">
+                            <span>🏍️</span>
+                        </div>
+                    </div>
+                    <div class="moto-card-content">
+                        <h3 class="moto-card-title">Yamaha WR450F</h3>
+                        <div class="moto-card-specs">
+                            <span><strong>Двигатель:</strong> 450cc</span>
+                            <span><strong>Мощность:</strong> 52 л.с.</span>
+                            <span><strong>Вес:</strong> 124 кг</span>
+                        </div>
+                        <div class="moto-card-footer">
+                            <span class="moto-card-price">от 780 000 ₽</span>
+                            <a href="#contact" class="btn btn-primary btn-sm">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="moto-card" data-category="hard">
+                    <div class="moto-card-image">
+                        <div class="moto-placeholder">
+                            <span>🏍️</span>
+                        </div>
+                    </div>
+                    <div class="moto-card-content">
+                        <h3 class="moto-card-title">Beta RR 480</h3>
+                        <div class="moto-card-specs">
+                            <span><strong>Двигатель:</strong> 478cc</span>
+                            <span><strong>Мощность:</strong> 58 л.с.</span>
+                            <span><strong>Вес:</strong> 116 кг</span>
+                        </div>
+                        <div class="moto-card-footer">
+                            <span class="moto-card-price">от 920 000 ₽</span>
+                            <a href="#contact" class="btn btn-primary btn-sm">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="moto-card" data-category="touring">
+                    <div class="moto-card-image">
+                        <div class="moto-placeholder">
+                            <span>🏍️</span>
+                        </div>
+                    </div>
+                    <div class="moto-card-content">
+                        <h3 class="moto-card-title">Suzuki DR-Z400E</h3>
+                        <div class="moto-card-specs">
+                            <span><strong>Двигатель:</strong> 398cc</span>
+                            <span><strong>Мощность:</strong> 40 л.с.</span>
+                            <span><strong>Вес:</strong> 138 кг</span>
+                        </div>
+                        <div class="moto-card-footer">
+                            <span class="moto-card-price">от 650 000 ₽</span>
+                            <a href="#contact" class="btn btn-primary btn-sm">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog-more">
+                <a href="#contact" class="btn btn-outline btn-lg">Показать все модели</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Почему выбирают нас</h2>
+                <p class="section-subtitle">Мы предлагаем лучшие условия для покупки эндуро мотоциклов</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔧</div>
+                    <h3 class="feature-title">Гарантия 2 года</h3>
+                    <p class="feature-text">Официальная гарантия на все мотоциклы и бесплатное техобслуживание в течение первого года</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚚</div>
+                    <h3 class="feature-title">Доставка по России</h3>
+                    <p class="feature-text">Быстрая и бережная доставка в любой регион. Отслеживание груза онлайн</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💳</div>
+                    <h3 class="feature-title">Кредит и рассрочка</h3>
+                    <p class="feature-text">Выгодные условия кредитования от наших банков-партнеров. Рассрочка 0%</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3 class="feature-title">Только оригинал</h3>
+                    <p class="feature-text">Работаем напрямую с производителями. 100% оригинальная техника</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👨‍🔧</div>
+                    <h3 class="feature-title">Сервисный центр</h3>
+                    <p class="feature-text">Собственный сервис с опытными механиками и оригинальными запчастями</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📞</div>
+                    <h3 class="feature-title">Поддержка 24/7</h3>
+                    <p class="feature-text">Консультации и техническая поддержка круглосуточно без выходных</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">О компании</h2>
+                    <p>
+                        <strong>EnduroMoto</strong> — ведущий поставщик эндуро мотоциклов в России с 2009 года.
+                        Мы начинали как небольшой клуб любителей бездорожья, а сегодня являемся официальным
+                        дилером крупнейших мировых брендов.
+                    </p>
+                    <p>
+                        Наша команда состоит из профессиональных райдеров и механиков, которые знают
+                        о мотоциклах всё. Мы не просто продаем технику — мы помогаем выбрать идеальный
+                        мотоцикл под ваши цели и стиль езды.
+                    </p>
+                    <ul class="about-list">
+                        <li>✓ Официальный дилер KTM, Husqvarna, Honda, Yamaha</li>
+                        <li>✓ Более 500 довольных клиентов</li>
+                        <li>✓ Собственный сервисный центр</li>
+                        <li>✓ Школа эндуро для начинающих</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <div class="about-placeholder">
+                        <span>🏔️</span>
+                        <p>Покоряем бездорожье вместе!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Отзывы клиентов</h2>
+                <p class="section-subtitle">Что говорят о нас наши покупатели</p>
+            </div>
+            <div class="reviews-slider">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">А</div>
+                        <div class="review-info">
+                            <h4>Александр М.</h4>
+                            <span>KTM 350 EXC-F</span>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">
+                        "Отличный сервис! Помогли выбрать мотоцикл под мои задачи, всё объяснили.
+                        Доставка была быстрой, мотоцикл пришел в идеальном состоянии. Рекомендую!"
+                    </p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">Д</div>
+                        <div class="review-info">
+                            <h4>Дмитрий К.</h4>
+                            <span>Husqvarna FE 501</span>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">
+                        "Брал Husqvarna в кредит — условия очень выгодные. Менеджеры вежливые и
+                        компетентные. Сервис тоже на высоте, ТО прошло быстро и качественно."
+                    </p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">И</div>
+                        <div class="review-info">
+                            <h4>Игорь В.</h4>
+                            <span>Honda CRF450L</span>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">
+                        "Уже третий мотоцикл беру в EnduroMoto. Всегда честные цены, никаких
+                        скрытых платежей. Ребята реально разбираются в технике и дают дельные советы."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Готовы к приключениям?</h2>
+                <p>Оставьте заявку и получите персональное предложение со скидкой до 10%</p>
+                <a href="#contact" class="btn btn-light btn-lg">Получить предложение</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Свяжитесь с нами</h2>
+                <p class="section-subtitle">Оставьте заявку и мы перезвоним вам в течение 15 минут</p>
+            </div>
+            <div class="contact-wrapper">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" class="form-input" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" class="form-input" placeholder="Телефон" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-input" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <select class="form-input">
+                            <option value="">Интересующая модель</option>
+                            <option value="ktm">KTM 350 EXC-F</option>
+                            <option value="husqvarna">Husqvarna FE 501</option>
+                            <option value="honda">Honda CRF450L</option>
+                            <option value="yamaha">Yamaha WR450F</option>
+                            <option value="beta">Beta RR 480</option>
+                            <option value="suzuki">Suzuki DR-Z400E</option>
+                            <option value="other">Другая модель</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-input" rows="4" placeholder="Сообщение (необязательно)"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">Отправить заявку</button>
+                    <p class="form-note">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+                </form>
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Адрес</h4>
+                            <p>г. Москва, ул. Мотоциклетная, д. 15</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h4>Телефон</h4>
+                            <p><a href="tel:+78001234567">8 (800) 123-45-67</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:info@enduromoto.ru">info@enduromoto.ru</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon">🕐</div>
+                        <div>
+                            <h4>Режим работы</h4>
+                            <p>Пн-Вс: 9:00 - 21:00</p>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="#" class="social-link">VK</a>
+                        <a href="#" class="social-link">TG</a>
+                        <a href="#" class="social-link">YT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-icon">🏍️</span>
+                    <span class="logo-text">ENDURO<span class="logo-accent">MOTO</span></span>
+                </div>
+                <p class="footer-copy">© 2024 EnduroMoto. Все права защищены.</p>
+                <div class="footer-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
