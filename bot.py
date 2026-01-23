@@ -27,7 +27,7 @@ load_dotenv()
 
 # Configure Tesseract path for Windows (если Tesseract не в PATH)
 # Раскомментируй и укажи свой путь, если нужно:
-# pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 # Configure logging
 logging.basicConfig(
